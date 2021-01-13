@@ -10,4 +10,8 @@ export class HttpService {
   getAll(url) {
     return this.http.get(url);
   }
+
+  post(url, payload) {
+    return this.http.post(url, payload);
+  }
 }

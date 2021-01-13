@@ -1,1 +1,5 @@
 npm install @ng-bootstrap/ng-bootstrap bootstrap ngx-bootstrap --save
+
+{{ }} - expression
+() - event
+[( )] - input/output with 2 way binding
