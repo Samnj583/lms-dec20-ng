@@ -16,6 +16,8 @@ import { BookComponent } from "./admin/book/book.component";
 
 import { HttpService } from "./shared/services/http.service";
 import { PagerService } from "./shared/services/pager.service";
+import { ShowRedDirective } from './shared/common/show-red.directive';
+import { AuthSortPipe } from './shared/common/auth-sort.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { PagerService } from "./shared/services/pager.service";
     AdminComponent,
     AuthorComponent,
     BookComponent,
+    ShowRedDirective,
+    AuthSortPipe,
   ],
   imports: [
     BrowserModule,

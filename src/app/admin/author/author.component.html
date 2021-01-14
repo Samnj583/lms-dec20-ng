@@ -2,7 +2,7 @@
 <hr class="featurette-divider" />
 <hr class="featurette-divider" />
 <div class="container marketing">
-  <h2>
+  <h2 appShowRed>
     List of Authors in my Library. Total Authors {{ totalAuthors }} as of
     {{ today | date: "short" }}
   </h2>
@@ -39,7 +39,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let a of pagedAuthors | orderBy: authorName; let i = index">
+      <tr *ngFor="let a of pagedAuthors; let i = index">
         <td>{{ i + 1 }}</td>
         <td>{{ a.authorName }}</td>
         <td>
